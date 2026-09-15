@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-parchment text-ink font-body;
+}
+
+.font-display {
+  font-optical-sizing: auto;
+}
+
+::selection {
+  background-color: #C99A3B55;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Custom scrollbar for the ledger tables */
+.ledger-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.ledger-scroll::-webkit-scrollbar-thumb {
+  background-color: #8FA382;
+  border-radius: 3px;
+}
